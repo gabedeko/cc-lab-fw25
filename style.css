@@ -211,9 +211,9 @@ img.original-img-style {
 }
 
 .home-body {
-  background-size: 110%;
+  background-size: 90%;
   background-position: 50% 50%;
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_p.jpg?v=1692983195516");
+  background-image: url("./assets/cloisters_0.jpg");
 }
 .home-item {
   background-color: rgba(231, 204, 177, .75);
