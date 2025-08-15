@@ -1,24 +1,25 @@
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+document.addEventListener('DOMContentLoaded', function (){ 
+  console.log("testington");
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  let siteInfo = document.querySelectorAll('.site-info');
 
-      // Store hash
-      var hash = this.hash;
+  let homeBody = document.querySelector('#homeBody');
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+  siteInfo.forEach((infos, index) => {
+
+      infos.addEventListener('mouseover', function () {
+        homeBody.classList.add("zoom-bg");
       });
-    } // End if
+
+      infos.addEventListener('mouseout', function () {
+        homeBody.classList.remove("zoom-bg");
+      });
+
+      console.log("mouseover event added to site-info " + index);
+
+
   });
+
+  
+
 });
