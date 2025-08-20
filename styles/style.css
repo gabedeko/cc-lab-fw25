@@ -1,5 +1,9 @@
 /* CSS files add styling rules to your content */
 
+@import url("helpers.css");
+@import url("headers.css");
+@import url("nav.css");
+
 body {
   /*font-family: monospace;*/
   font-family: 'Space Grotesk', sans-serif;
@@ -128,9 +132,7 @@ div {
   font-size: 18px;
 }
 
-.menu-header {
-  font-size: 24px;
-}
+
 
 .full-width {
   width: 100%;
@@ -161,15 +163,6 @@ hr {
   padding: 1%;
   float: left;
   display: inline-block;
-}
-
-.nav {
-  padding: 2%;
-  width: 20%;
-  height: 100%;
-  display: inline-block;
-  float: left;
-  /*     background-color:red; */
 }
 
 .content {
@@ -248,7 +241,7 @@ img.original-img-style {
 .home-body {
   background-size: 10%;
   background-position: 50% 50%;
-  background-image: url("./assets/cloisters_0x.jpg");
+  background-image: url("../assets/cloisters_0x.jpg");
   transition: background-size 15s ease-in-out;
 }
 
@@ -265,10 +258,7 @@ img.original-img-style {
   font-size: 40px;
 }
 
-.nav-btm {
-  border-top: 4px solid #F6FEDB;
-  padding-top: 8px;
-}
+
 
 body .gist .gist-file {
   margin-bottom: 0;
@@ -317,17 +307,6 @@ body .gist .gist-meta {
   display: none;
 }
 
-.nav-link {
-  font-size: 18px;
-  line-height: 27px;
-  cursor: pointer;
-}
-.nav-link a,
-.nav-link a:visited {
-  color: black;
-  text-decoration: none;
-}
-
 #toggle {
   display: none;
 }
@@ -338,9 +317,6 @@ body .gist .gist-meta {
     margin: 1%;
     width: 98%;
     height: 100%;
-  }
-  .nav {
-    width: 100%;
   }
   .content {
     width: 100%;
@@ -388,82 +364,7 @@ body .gist .gist-meta {
   border: 2px solid #94001c;
 }
 
-.header {
-  height: 45vh;
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-}
-.header-tint {
-  background-color: rgba(244, 250, 255, .75);
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.w1-header {
-    background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_cb.jpg?v=1692983896370");
-}
 
-.w1-5-header {
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/leaves_232.jpg?v=1693698055534");
-}
-
-.w2-header {
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/leaves_232.jpg?v=1693698055534");
-}
-
-.w3-header {
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_l.jpg?v=1692983910601");
-}
-
-.w4-header {
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_d0.jpg?v=1692984650119");
-}
-
-.w5-header {
-  background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_berries.jpg?v=1695685240751");
-}
-
-.w6-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/forest_fog.jpg?v=1696033828847);
-}
-
-.w7-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_a1.jpg?v=1692983889178);
-}
-
-.w8-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_d.jpg?v=1692983192916);
-}
-
-.w9-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/parkv2.jpg?v=1692983916629);
-}
-
-.w10-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/foliage.jpg?v=1698768828477);
-}
-.w11-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_s5.jpg?v=1692984673623);
-}
-.w12-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/grand_army_pigeons.jpg?v=1700238004986);
-}
-.w13-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/grand_army_pigeons.jpg?v=1700672039004);
-}
-.w14-header {
-  background-image: url(https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/parkt8.jpg?v=1692983920699);
-}
-.w15-header {
-  background-image: url(https://cdn.glitch.global/618eee33-67fe-4199-ba0f-460e7e469256/roberto-carlos-roman-don-wt3disORDAg-unsplash.jpg?v=1678985280886);
-}
-.w16-header {
-  background-image: url(https://cdn.glitch.global/618eee33-67fe-4199-ba0f-460e7e469256/beach_seagulls_sunset.jpg?v=1682256436793);
-}
 #editor { 
        height: 500px;
        width: 100%;
@@ -473,9 +374,7 @@ body .gist .gist-meta {
   height: 500px;
 }
 
-.week-list-link {
-  font-size: 20px;
-}
+
 
 .section-title {
   width: 100%;
@@ -514,320 +413,7 @@ tr:nth-child(even) {
 td ul li, td ul li {
   font-size: 10pt;
 }
-/**********************MARGIN SPACES**********************/
-.no-margin {
-    margin:0 !important;
-  }
-  .margin-8 {
-    margin:8px;
-  }
-  .margin-16 {
-    margin:16px;
-  }
-  .margin-20 {
-    margin:20px;
-  }
-  .margin-24 {
-    margin:24px;
-  }
-  .margin-32 {
-    margin:32px;
-  }
-  .margin-40 {
-    margin:40px;
-  }
-  
-  
-  .mt--4{
-    margin-top:4px;
-  }
-  
-  .mt-8{
-    margin-top:8px;
-  }
-  
-  .mt-12{
-    margin-top:12px;
-  }
-  
-  .mt-16{
-    margin-top:16px;
-  }
-  
-  .mt-24{
-    margin-top:24px;
-  }
-  
-  .mt-32{
-    margin-top:32px;
-  }
-  
-  .mt-40{
-    margin-top:40px;
-  }
 
-  
-  
-  .mt-48{
-    margin-top:48px;
-  }
-  .mt-minus-48 {
-    margin-top: -48px;
-  }
-  
-  .mt-56{
-    margin-top:56px;
-  }
-  
-  .mt-64{
-    margin-top:64px;
-  }
-  
-  .mt-minus-64 {
-    margin-top: -64px;
-  }
-  
-  .mt-72{
-    margin-top:72px;
-  }
-  
-  .mt-minus-72 {
-    margin-top: -72px;
-  }
-  
-  .mt-80{
-    margin-top:80px;
-  }
-  
-  .mt-minus-80 {
-    margin-top: -80px;
-  }
-  
-  .mt-96{
-    margin-top:96px;
-  }
-  
-  .mt-minus-96 {
-    margin-top: -96px;
-  }
-  
-  .mt-104{
-    margin-top:104px;
-  }
-  
-  .mt-120{
-    margin-top:120px;
-  }
-  
-  .mt-minus-120 {
-    margin-top: -120px;
-  }
-  
-  .mt-160{
-    margin-top:160px;
-  }
-  
-  .mt-200{
-    margin-top:200px;
-  }
-  
-  .mt-240{
-    margin-top:240px;
-  }
-  
-  .mt-280{
-    margin-top:280px;
-  }
-  
-  .mt-320 {
-    margin-top:320px;
-  }
-  
-  .mt-360 {
-    margin-top:360px;
-  }
-  
-  .mt-20vh {
-    margin-bottom: 20vh;
-  }
-  .mt-40vh {
-    margin-bottom: 40vh;
-  }
-  .mt-60vh {
-    margin-bottom: 60vh;
-  }
-  .mt-80vh {
-    margin-bottom: 80vh;
-  }
-  .mt-100vh {
-    margin-bottom: 100vh;
-  }
-  /********************************************/
-  .mb-0{
-    margin-bottom:0;
-  }
-  
-  .mb--4{
-    margin-bottom:4px;
-  }
-  
-  .mb-8{
-    margin-bottom:8px;
-  }
-  
-  .mb-16{
-    margin-bottom:16px;
-  }
-  
-  .mb-minus-15{
-    margin-bottom:-15px;
-  }
-  
-  .mb-minus-16{
-    margin-bottom:-16px;
-  }
-  
-  .mb-24{
-    margin-bottom:24px;
-  }
-  
-  .mb-32{
-    margin-bottom:32px!important;
-  }
-  
-  .mb-40{
-    margin-bottom:40px;
-  }
-  
-  .mb-48{
-    margin-bottom:48px;
-  }
-  
-  .mb-minus-48 {
-    margin-bottom: -48px;
-  }
-  
-  .mb-56{
-    margin-bottom:56px;
-  }
-  
-  .mb-64{
-    margin-bottom:64px;
-  }
-  
-  .mb-minus-64 {
-    margin-bottom: -64px;
-  }
-  
-  .mb-72{
-    margin-bottom:72px;
-  }
-  
-  .mb-minus-72 {
-    margin-bottom: -72px;
-  }
-  
-  .mb-80{
-    margin-bottom:80px;
-  }
-  
-  .mb-minus-80 {
-    margin-bottom: -80px;
-  }
-  
-  .mb-104{
-    margin-bottom:104px;
-  }
-  
-  .mb-minus-104 {
-    margin-bottom: -104px;
-  }
-  
-  .mb-120{
-    margin-bottom:120px;
-  }
-  
-  .mb-minus-120 {
-    margin-bottom: -120px;
-  }
-  
-  .mb-128{
-    margin-bottom:128px;
-  }
-  
-  .mb-160{
-    margin-bottom:160px;
-  }
-  
-  .mb-200{
-    margin-bottom:200px;
-  }
-
-  .mb-240{
-    margin-bottom:240px;
-  }
-  
-  .mb-20vh {
-    margin-bottom: 20vh;
-  }
-  .mb-40vh {
-    margin-bottom: 40vh;
-  }
-  .mb-60vh {
-    margin-bottom: 60vh;
-  }
-  .mb-80vh {
-    margin-bottom: 80vh;
-  }
-  .mb-100vh {
-    margin-bottom: 100vh;
-  }
-
-.image-box-1 {
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-.image-box-2 {
-    height: 750px;
-    width: 500px;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-/**********************MARGIN SPACES**********************/
-
-.pt--4{
-    padding-top:4px;
-  }
-  
-  .pt-8{
-    padding-top:8px;
-  }
-  
-  .pt-12{
-    padding-top:12px;
-  }
-  
-  .pt-16{
-    padding-top:16px;
-  }
-  
-  .pt-24{
-    padding-top:24px;
-  }
-  
-  .pt-32{
-    padding-top:32px;
-  }
-  
-  .pt-40{
-    padding-top:40px;
-  }
 
 .btn-1 {
   border: 2px solid #94001c;
@@ -914,3 +500,4 @@ td ul li, td ul li {
     transform: translateY(-2px);
   }
 }
+

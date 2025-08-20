@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function (){ 
-  console.log("testington");
 
   let siteInfo = document.querySelectorAll('.site-info');
 
@@ -20,6 +19,23 @@ document.addEventListener('DOMContentLoaded', function (){
 
   });
 
-  
+  fetch("nav.html")
+  .then((response) => response.text())
+  .then((data) => {
+    const navElement = document.querySelector("nav");
+    navElement.innerHTML = data;
 
+    // Add event listeners to the nav links
+    let navIcon = document.querySelectorAll('.nav-icon');
+
+    navIcon.forEach(item => {
+      console.log('test');
+      item.addEventListener('click', () => {
+        console.log('Item clicked:');
+      });
+    });
+  });
+
+  
+  
 });
