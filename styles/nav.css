@@ -1,10 +1,10 @@
 .nav {
-  padding: 2%;
-  width: 20%;
-  height: 100%;
+  padding: 1rem;
+  width: auto;
+  height: auto;
   display: inline-block;
-  float: left;
-  /*     background-color:red; */
+  background-color: rgba(221, 240, 255, .75);
+  border: 2px solid #94001c;
 }
 
 .nav-link {
@@ -19,7 +19,13 @@
 }
 
 .menu-header {
+  /* text-decoration: none; */
   font-size: 24px;
+  white-space: nowrap;
+}
+
+.week-list {
+  font-weight: 500;
 }
 
 .week-list-link {
@@ -56,9 +62,12 @@
 
 .mobile-nav {
   overflow: hidden;
-  background-color: rgba(244, 250, 255, .75);
-  position: relative;
+  background-color: rgba(221, 240, 255, .75);
+  /* position: relative; */
   width: fit-content;
+  position: absolute;
+  right: 0;
+
 }
 
 .topnav #myLinks {
@@ -100,6 +109,9 @@
   height: 40px;
 }
 
+.nav-links {
+  display: none;
+}
 .nav-links a {
   display: block;
 }
