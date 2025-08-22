@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+        <!-- import the webpage's stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <script src="./script.js" defer></script>
   </head>
 
   <body>
@@ -113,10 +115,15 @@
         let triangleY = height / 2 - shapeSize / 2;
         triangle(triangleX, triangleY, triangleX + shapeSize, triangleY, triangleX + shapeSize / 2, triangleY - shapeSize);
 
+        // The push() and pop() below was added by me
+        // The reason I added them is because I want the color to be different just for the circle 
         // Circle
+        push();
+        fill(0, 125, 0); // Slightly darker green for the circle
         let circleX = spacing * 2;
         let circleY = height / 2;
         ellipse(circleX, circleY, shapeSize);
+        pop();
 
         // Rectangle
         let rectX = spacing * 3;
@@ -124,8 +131,11 @@
         rect(rectX, rectY, shapeSize, shapeSize);
       }
       </div>
+
+      <div class="video-container">
+        <iframe class=" mt-64 youtube-vid" width="560" height="315" src="https://www.youtube.com/embed/A9vkCpeBgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       
-      <iframe class=" mt-64 youtube-vid" width="560" height="315" src="https://www.youtube.com/embed/A9vkCpeBgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>

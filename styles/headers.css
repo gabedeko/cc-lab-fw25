@@ -5,7 +5,7 @@
   width: 100%;
 }
 .header-tint {
-  background-color: rgba(221, 240, 255, .75);
+  background-color: rgba(221, 240, 255, .25);
   height: 100%;
   width: 100%;
   display: flex;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 .w1-header {
-    background-image: url("https://cdn.glitch.global/458f0fda-092e-4b38-b618-cc2d92eb0cc0/park_cb.jpg?v=1692983896370");
+    background-image: url("../assets/cloisters1.jpg");
 }
 
 .w1-5-header {
