@@ -141,4 +141,6 @@
 .mobile-nav-item {
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 0 8px;
+  display: inline!important;
 }
