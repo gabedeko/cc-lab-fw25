@@ -410,6 +410,10 @@ body .gist .gist-meta {
   width: 100%;
 }
 
+.skills-box ul {
+    padding: 8px;
+}
+
 .border {
   border: 2px solid #94001c;
 }
